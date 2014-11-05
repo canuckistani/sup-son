@@ -1,0 +1,16 @@
+{
+  "title": "'Sup Son",
+  "name": "sup-son",
+  "version": "0.0.1",
+  "description": "Sup son, table flip, other cool emoji copied right into your clipboard.",
+  "main": "index.js",
+  "author": "Jeff Griffiths ( @canuckistani )",
+  "scripts": {
+    "test": "jpm -b /Applications/FirefoxNightly.app test"
+  },
+  "engines": {
+    "firefox": ">=33.0a1",
+    "fennec": ">=33.0a1"
+  },
+  "license": "MIT"
+}
