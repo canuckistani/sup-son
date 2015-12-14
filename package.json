@@ -12,5 +12,12 @@
     "firefox": ">=33.0a1",
     "fennec": ">=33.0a1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "preferences": [{
+      "description": "Has the firstrun page been shown?",
+      "type": "bool",
+      "name": "hasBeenRun",
+      "value": false,
+      "title": "First Run"
+  }]
 }

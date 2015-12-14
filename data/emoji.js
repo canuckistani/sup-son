@@ -1,4 +1,4 @@
-
+console.log('in content script');
 
 var filled = false;
 
@@ -7,7 +7,7 @@ self.port.on('show', () => {
   if (!filled) {
     self.port.emit('log', "filling")
     let list = '';
-    console.log("length: " + self.options.length);
+    console.log(self.options);
     for (i in self.options) {
       let item = self.options[i];
       console.log(item);
@@ -17,4 +17,3 @@ self.port.on('show', () => {
     filled = true;
   }
 });
-

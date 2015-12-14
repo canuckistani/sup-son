@@ -1,37 +1,40 @@
-let { data } = require('sdk/self');
-let fs = require('sdk/io/fs');
-let { Hotkey } = require("sdk/hotkeys");
+const { data } = require('sdk/self');
+const fs = require('sdk/io/fs');
+const { Hotkey } = require("sdk/hotkeys");
+const clipboard = require("sdk/clipboard");
+const emoji = {sup: "¯\\_(ツ)_/¯"};
+const notifications = require("sdk/notifications");
 
-const emoji = JSON.parse(data.load('emoji.json'));
-
-let panel = require("sdk/panel").Panel({
-  width: 300,
-  height: 120,
-  contentURL: data.url('emoji-list.html'),
-  contentScriptFile: data.url('emoji.js'),
-  contentScriptOptions: emoji
-});
+// first run prefs
+const prefs = require("sdk/simple-prefs").prefs;
 
 let showHotKey = Hotkey({
   combo: "accel-shift-s",
   onPress: function() {
-    panel.show();
+    console.log('ran hotkey');
+    // panel.show();
+    clipboard.set(emoji.sup);
+
+    notifications.notify({
+      title: "Shrug-tastic!!",
+      text: emoji.sup + " is ready to deploy!",
+      onClick: function (data) {
+        console.log(data);
+        // console.log(this.data) would produce the same result.
+      }
+    });
   }
 });
-
-panel.on('show', () => {
-  panel.port.emit('show');
-});
-
-panel.port.on('log', (msg) => { console.log(msg); });
 
 module.exports = {
   emoji: emoji
 };
 
+// first run experience
 
-/**
-[{"emoji": "¯\_(ツ)_/¯", "name": "shrug"},
-{"emoji": "¯\(º_o)/¯", "name": "dunno"},
+if (!prefs.hasBeenRun) {
 
-*/
+  // prefs.hasBeenRun = true;
+  console.log('firstrun hasn\'t been run');
+
+}
