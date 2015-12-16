@@ -25,7 +25,7 @@ let shrugHotKey = Hotkey({
 });
 
 let flipHotKey = Hotkey({
-  combo: "alt-shift-g",
+  combo: "accel-shift-z",
   onPress: function() {
     clipboard.set(emoji.flip);
     notifications.notify({
