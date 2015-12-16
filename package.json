@@ -1,7 +1,7 @@
 {
   "title": "'Sup Son",
   "name": "sup-son",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Sup son, table flip, other cool emoji copied right into your clipboard.",
   "main": "index.js",
   "author": "Jeff Griffiths ( @canuckistani )",
