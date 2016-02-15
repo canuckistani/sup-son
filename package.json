@@ -1,8 +1,8 @@
 {
   "title": "'Sup Son",
   "name": "sup-son",
-  "version": "0.1.1",
-  "description": "Sup son, table flip, other cool emoji copied right into your clipboard. Currently supported keybindings:\n* Ctrl+SHIFT+s: ¯\\_(ツ)_/¯\n* Ctrl+SHIFT+z: (╯°□°）╯︵ ┻━┻\n",
+  "version": "0.1.2",
+  "description": "Sup son, table flip, other cool emoji copied right into your clipboard.\n\n Currently supported keybindings:\n* Ctrl+SHIFT+s: ¯\\_(ツ)_/¯\n* Ctrl+SHIFT+z: (╯°□°）╯︵ ┻━┻\n",
   "main": "index.js",
   "author": "Jeff Griffiths ( @canuckistani )",
   "scripts": {
