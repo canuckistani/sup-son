@@ -8,7 +8,7 @@ Just a little add-on providing lightning fast access to clever emoji.
 * ctrl + shift + z ( cmd + shift + z on OS X) copies the mighty (╯°□°）╯︵ ┻━┻ to your clipboard!
 * that's it.
 
-**DISCLAIMER** Use of this add-on to deploy shrugs and flips at lightning speed may enhance your credibility and regard amongst cooler co-workers and further your career. Please send paypal donations to [ff3j@burnitall.com](mailt:ff3j@burnitall.com).
+**DISCLAIMER** Use of this add-on to deploy shrugs and flips at lightning speed may enhance your credibility and regard amongst cooler co-workers and further your career. Please send paypal donations to [jeff@eko-recordings.ca](mailt:jeff@eko-recordings.ca).
 
 ###Future Roadmap
 
